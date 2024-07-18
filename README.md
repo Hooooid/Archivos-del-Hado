@@ -1,2 +1,2 @@
 # Archivos del Hado
- Archivo para relatos y poemas sobre la campaña Guia del Náufrago Galáctico. Work in progress.
+ Archive for all documents related to my D&D campaign's lore, mainly made to help me learn web development.
