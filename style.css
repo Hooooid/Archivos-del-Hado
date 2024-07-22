@@ -1,0 +1,116 @@
+html {
+    min-height: 100%;
+    max-height: 100%;
+}
+
+body {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    /*background: linear-gradient(180deg, black, #050063);*/
+
+  }
+
+/*Header & Navigation*/
+
+#page-header {
+    text-align: center;
+    text-decoration: none;
+}
+
+#main-nav {
+    text-align: center;
+    text-decoration: none;
+}
+
+#main-nav a {
+    background: black;
+    color: white;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 14px;
+    text-decoration: none;
+
+}
+
+
+#main-nav a:hover {
+    background: white;
+    border: 1px solid black;
+    color:black;
+    text-decoration: none color(black);
+}
+
+/*Character navigation (work in progress)*/
+
+.char-nav {
+    height: auto;
+    width: auto;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+}
+
+/* Willmont */
+.char-nav .will-nav {
+    font-size: x-large;
+    font-weight: bolder;
+    position: relative;
+    color: grey;
+    padding: 39px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    opacity: 1;
+    z-index: 1;
+    transition: transform 0.3s;
+
+    &::before {
+        content: "";
+        transition: opacity 0.3s;
+        background-image: url(/Personajes/Willmont/Imágenes/willmont-nav.png);
+        border-radius: 20px;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.5;
+
+    
+    }
+}
+
+ .char-nav .will-nav:hover {
+    color: black;
+    -webkit-text-stroke: 0.5px white;
+    padding: 39px;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    border: 1px solid black;
+    transform: scale(1.05);
+
+        &::before {
+            content: "";
+            transition: opacity 0.3s;
+            background-image: url(/Personajes/Willmont/Imágenes/willmont-nav.png);
+            border-radius: 20px;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 1;
+        }
+    
+}
