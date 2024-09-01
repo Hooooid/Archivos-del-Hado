@@ -26,7 +26,7 @@ body {
 /* Header & Navigation */
 
 .header {
-    background-image: url(/Img/headerimage.png);
+    background-image: url(Img/headerimage.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,7 +127,7 @@ hr {
     &::before {
         content: "";
         transition: opacity 0.3s;
-        background-image: url(/Personajes/Willmont/Imágenes/willmont-nav.png);
+        background-image: url(Personajes/Willmont/Imágenes/willmont-nav.png);
         border-radius: 20px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -201,7 +201,7 @@ hr {
     &::before {
         content: "";
         transition: opacity 0.3s;
-        background-image: url(/Personajes/Veinte/Imágenes/veinte-nav.png);
+        background-image: url(Personajes/Veinte/Imágenes/veinte-nav.png);
         border-radius: 20px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -273,7 +273,7 @@ hr {
     &::before {
         content: "";
         transition: opacity 0.3s;
-        background-image: url(/Personajes/Vasia/Imágenes/vasia-nav.png);
+        background-image: url(Personajes/Vasia/Imágenes/vasia-nav.png);
         border-radius: 20px;
         background-size: cover;
         background-position: center;
@@ -343,7 +343,7 @@ hr {
     &::before {
         content: "";
         transition: opacity 0.3s;
-        background-image: url(/Personajes/Keyla/Imágenes/keyla-nav.png);
+        background-image: url(Personajes/Keyla/Imágenes/keyla-nav.png);
         border-radius: 20px;
         background-size: cover;
         background-position: center;
@@ -413,7 +413,7 @@ hr {
     &::before {
         content: "";
         transition: opacity 0.3s;
-        background-image: url(/Personajes/Azra/Imágenes/azra.nav.png);
+        background-image: url(Personajes/Azra/Imágenes/azra.nav.png);
         border-radius: 20px;
         background-size: cover;
         position: absolute;
@@ -483,7 +483,7 @@ hr {
     &::before {
         content: "";
         transition: opacity 0.3s;
-        background-image: url(/Personajes/Dabria/Imágenes/dabria-nav.png);
+        background-image: url(Personajes/Dabria/Imágenes/dabria-nav.png);
         border-radius: 20px;
         background-size: cover;
         background-position: center;
