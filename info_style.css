@@ -1,0 +1,114 @@
+/* Info Page */
+
+.info__body {
+    padding: 5% 1%;
+    background-image: url(/Img/bg.png);
+    background-repeat: repeat;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.container {
+    color: black;
+    width: 919px;
+    text-align: center;
+    height: 555px;
+    margin: 0% auto;
+    display: grid;
+    grid-template-areas: "text links"
+                         "footer links";
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 9fr 1fr;
+    overflow: hidden;
+
+    ::after {
+        content: "";
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        background:repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0px, transparent 1px, transparent 5px);
+    }
+}
+
+.info_links {
+    grid-area: links;
+    background-color: #182028;
+    padding: 20px 0px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.info_text {
+    padding: 2% 5%;
+    text-align: left;
+    color: white;
+    grid-area: text;
+    background-color: #1a252f;
+    border-radius: 20px 0px 0px 0px;
+}
+
+.info_footer {
+    grid-area: footer;
+    background-color: #1a252f;
+    border-radius: 0px 0px 0px 20px;
+    padding: 2% 5%;
+    text-align: left;
+    color: white;
+}
+
+.h_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.pfp {
+    border-radius: 50%;
+    margin: 0px 0px 20px 0px;
+}
+
+.namecard {
+    background: linear-gradient(0.25turn, #6bafb9, #294a73);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.header_pages{
+    color: white;
+    background: linear-gradient(0.25turn, #6bafb9, #294a73);
+    padding: 2% 3%;
+    text-align: start;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.link_pages {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding: 0px 0px;
+    align-items: start;
+    font-size: 22px;
+}
+
+.link_pages a {
+    text-decoration: none;
+    color: #6bafb9;
+    padding: 0% 4%;
+    margin: 2% 0%;
+    width: fit-content;
+    height: fit-content;
+    align-content: center;
+}
+
+ion-icon {
+    font-size: 20px;
+}

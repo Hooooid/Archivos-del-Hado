@@ -1,56 +1,88 @@
 html {
     min-height: 100%;
-    max-height: 100%;
+    max-height: auto;
 }
 
 body {
-    background-color: rgb(4, 4, 26);
     font-family: 'Raleway', sans-serif;
-    /* background: linear-gradient(180deg, black, #050063); */
+    overflow: visible ;
+    z-index: 0;
+    margin: 0px;
+    height: auto;
+    width: auto;
+    background: linear-gradient(180deg, #05001b, black);
+    background-repeat: no-repeat;
+  }
 
+.characters{
+    font-family: 'Raleway', sans-serif;
+    overflow: visible ;
+    z-index: 0;
+    margin: auto;
+    height: 100%;
+    width: auto;
   }
 
 /* Header & Navigation */
 
+.header {
+    background-image: url(/Img/headerimage.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 0px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+hr {
+    position: relative;
+    bottom: 8px;
+}
+
 .logo  {
-    position: absolute;
-    top: -2px;
-    right: 0%;
-    bottom: 0px;
-    left: 58px;
-    height: 17%;
-    width: 17%;
+    max-height: 25%;
+    max-width: 25%;
+    flex-grow: 2;
+    flex-shrink: 1;
+    height: 10%;
+    width: 20%;
 }
 
-.page-header {
+.page-title {
     color: white;
-    text-align: center;
     text-decoration: none;
-    display: block;
     font-size: xx-large;
+
 }
 
-.main-nav {
-    text-align: center;
-    text-decoration: none;
-    position: static;
+.navigation {
+    display: inline-flex;
+    width: fit-content;
+    justify-content: center;
 }
 
-.main-nav a {
+.navigation a {
     background-color: rgb(165, 165, 165);
     color: black;
-    display: inline-block;
+    display: inline;
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px;
-    padding: 14px;
+    padding: 14px ;
+    flex-grow: 1;
     font-size: large;
     text-decoration: none;
     transition: all 0.3s;
-    
 }
 
-.main-nav a:hover {
+.navigation a:hover {
     background: white;
     border: 1px solid black;
     color:black;
@@ -64,7 +96,7 @@ body {
 .char-nav {
     height: auto;
     width: auto;
-    margin: 30px;
+    margin: 0px 30px;
     padding: 10px;
     text-align: center;
     display: grid;
@@ -89,6 +121,7 @@ body {
     z-index: 1;
     transition: transform 0.3s;
     display: flex;
+    overflow: hidden;
 
     /* Imagen */
     &::before {
@@ -497,3 +530,4 @@ body {
         }
     }
 }
+
